@@ -52,6 +52,7 @@ Users can create budgets, add transactions, set savings goals, and monitor their
 No additional software or server setup is required.
 
 ## Folder Structure
+```text
 Final Project/
 │
 ├── index.html
@@ -63,11 +64,11 @@ Final Project/
 ├── styles.css
 │
 └── README.md
-
+```
 
 ## Author
 
-Jakob
+Jakob Anderson
 
 ## Known Limitations
 
