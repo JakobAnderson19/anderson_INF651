@@ -1978,3 +1978,11 @@ body.dark-mode .mode-option input {
     accent-color: #4caf50;
 
 }
+
+body.dark-mode .balance-section {
+
+    background-color: #2b2b2b;
+
+    color: #f1f1f1;
+
+}
