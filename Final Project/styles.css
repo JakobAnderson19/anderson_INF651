@@ -1805,7 +1805,8 @@ body.dark-mode .savings-container,
 body.dark-mode .savings-card,
 body.dark-mode .savings-setup,
 body.dark-mode .savings-calculator-card,
-body.dark-mode .summary-card {
+body.dark-mode .summary-card,
+body.dark-mode .edit-savings-panel {
     background: #2b2b2b;
     color: white;
 }
@@ -1984,5 +1985,35 @@ body.dark-mode .balance-section {
     background-color: #2b2b2b;
 
     color: #f1f1f1;
+
+}
+
+/* Dark Mode Budget Edit Box */
+body.dark-mode .budget-edit-box {
+
+    background-color: #2b2b2b;
+    color: white;
+
+}
+
+
+/* Dark Mode Savings Edit Box */
+body.dark-mode .edit-savings-box,
+body.dark-mode .edit-savings-panel {
+
+    background-color: #2b2b2b;
+    color: white;
+
+}
+
+
+/* Dark Mode Edit Inputs */
+body.dark-mode .budget-edit-box input,
+body.dark-mode .edit-savings-box input,
+body.dark-mode .edit-savings-panel input {
+
+    background-color: #3a3a3a;
+    color: white;
+    border-color: #666;
 
 }
