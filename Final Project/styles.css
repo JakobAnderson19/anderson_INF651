@@ -1788,3 +1788,193 @@ tr:hover {
     gap: 12px;
 
 }
+
+body.dark-mode {
+    background: #1b1b1b;
+    color: #f0f0f0;
+}
+
+body.dark-mode .card,
+body.dark-mode .budget-card,
+body.dark-mode .transaction-history,
+body.dark-mode .transaction-input-box,
+body.dark-mode .transaction-type-box,
+body.dark-mode .budget-container,
+body.dark-mode .budget-setup,
+body.dark-mode .savings-container,
+body.dark-mode .savings-card,
+body.dark-mode .savings-setup,
+body.dark-mode .savings-calculator-card,
+body.dark-mode .summary-card {
+    background: #2b2b2b;
+    color: white;
+}
+
+body.dark-mode input,
+body.dark-mode select {
+    background: #3a3a3a;
+    color: white;
+    border-color: #666;
+}
+
+body.dark-mode table th {
+    background: #151515;
+}
+
+body.dark-mode table td {
+    color: white;
+}
+
+/* Monthly Summary Container */
+body.dark-mode .transaction-summary {
+
+    background-color: #2b2b2b;
+    color: white;
+
+}
+
+
+/* Monthly Summary Individual Cards */
+body.dark-mode .summary-card {
+
+    background-color: #3a3a3a;
+    color: white;
+
+}
+
+
+/* Darker Deposit Rows */
+body.dark-mode .deposit-row {
+
+    background-color: #1f4d2b;
+
+}
+
+
+body.dark-mode .deposit-row:hover {
+
+    background-color: #285f36;
+
+}
+
+
+/* Darker Withdrawal Rows */
+body.dark-mode .withdrawal-row {
+
+    background-color: #5a2525;
+
+}
+
+
+body.dark-mode .withdrawal-row:hover {
+
+    background-color: #6e3030;
+
+}
+
+
+/* Darker Negative Balance */
+body.dark-mode .negative-balance-row {
+
+    background-color: #7a3030;
+
+}
+
+
+body.dark-mode .negative-balance-row:hover {
+
+    background-color: #914040;
+
+}
+
+
+/* Keep amount text readable */
+body.dark-mode .deposit-amount {
+
+    color: #6ee787;
+
+}
+
+
+body.dark-mode .withdrawal-amount {
+
+    color: #ff7b72;
+
+}
+/* Darker Initial Balance Row */
+
+body.dark-mode .initial-balance-row {
+
+    background-color: #1f4d2b;
+    color: white;
+
+}
+
+
+body.dark-mode .initial-balance-row:hover {
+
+    background-color: #285f36;
+
+}
+
+
+/* Initial balance amount text */
+body.dark-mode .initial-balance-amount {
+
+    color: #6ee787;
+
+}
+
+/* Dark Mode Toggle Button */
+
+.theme-button {
+
+    border-radius: 50px;
+
+    padding: 10px 25px;
+
+    background-color: #27ae60;
+
+    color: white;
+
+    font-weight: bold;
+
+    border: none;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+
+}
+
+
+.theme-button:hover {
+
+    background-color: #219150;
+
+}
+
+/* Dark Mode Savings Calculator Options */
+
+body.dark-mode .mode-option {
+
+    background-color: #2b2b2b;
+
+    color: white;
+
+    border-color: #555;
+
+}
+
+
+body.dark-mode .mode-option:hover {
+
+    border-color: #4caf50;
+
+}
+
+body.dark-mode .mode-option input {
+
+    accent-color: #4caf50;
+
+}
