@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BudgetTracker - Home</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+
+            <h1 class="logo">BudgetTracker</h1>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="transactions.html">Transactions & Income</a></li>
+                <li><a href="budget.html">Budget</a></li>
+                <li><a href="savings.html">Savings</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+
+    <main>
+
+        <!-- Welcome Section -->
+        <section class="hero">
+
+            <h2>Welcome to BudgetTracker</h2>
+
+            <p>
+                Manage your money, track your spending,
+                and reach your financial goals in one place.
+            </p>
+
+            <p id="welcome-message"></p>
+
+        </section>
+
+
+
+        <!-- Initialize Account Balance -->
+        <section class="balance-section" id="balance-setup">
+
+            <h2>Initialize Your Account</h2>
+
+            <p>
+                Enter your current account balance to begin tracking your finances.
+            </p>
+
+
+            <input
+                type="number"
+                id="starting-balance"
+                placeholder="Enter starting balance"
+            >
+
+
+            <button id="initialize-btn">
+                Set initial balance
+            </button>
+
+
+            <p id="balance-message"></p>
+
+        </section>
+
+
+
+        <!-- Overview Cards -->
+        <section class="overview">
+
+            <h2>Financial Overview</h2>
+
+
+            <div class="cards">
+
+
+                <div class="card">
+
+                    <h3>Current Balance</h3>
+
+                    <p id="home-current-balance">
+                        $0.00
+                    </p>
+
+                </div>
+
+
+
+                <div class="card">
+
+                    <h3>Total Income</h3>
+
+                    <p id="home-total-income">
+                        $0.00
+                    </p>
+
+                </div>
+
+
+
+                <div class="card">
+
+                    <h3>Total Expenses</h3>
+
+                    <p id="home-total-expenses">
+                        $0.00
+                    </p>
+
+                </div>
+
+
+
+                <div class="card">
+
+                    <h3>Savings Progress</h3>
+
+                    <p id="home-savings-progress">
+                        0%
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <footer>
+
+        <p>
+            © 2026 BudgetTracker
+        </p>
+
+    </footer>
+
+
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>

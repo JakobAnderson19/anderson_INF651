@@ -1,0 +1,1790 @@
+/* ==============================
+   General Styling
+   ============================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #a0d7ff;
+
+    color: #333;
+
+    padding-top: 80px;
+
+}
+
+
+
+main {
+
+    max-width: 1700px;
+
+    margin: auto;
+
+    padding: 40px;
+
+}
+
+footer {
+
+    width: 100%;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 30px;
+
+}
+
+
+
+/* ==============================
+   Navigation
+   ============================== */
+
+
+.navbar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px;
+
+    background-color: #2c3e50;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+}
+
+
+
+.logo {
+
+    color: white;
+
+}
+
+
+
+.nav-links {
+
+    display: flex;
+
+    list-style: none;
+
+    gap: 20px;
+
+}
+
+
+
+.nav-links a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+
+
+.nav-links a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+
+/* ==============================
+   Home Page
+   ============================== */
+
+
+.hero {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+
+}
+
+
+
+.hero h2 {
+
+    font-size: 2.5rem;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.balance-section {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    margin-bottom: 40px;
+
+}
+
+.balance-section h2 {
+
+    margin-bottom:20px;
+
+}
+
+
+.balance-section input {
+
+    margin-top:10px;
+
+    margin-bottom:15px;
+
+}
+
+
+.balance-section button {
+
+    margin-top:10px;
+
+}
+
+
+
+input,
+select {
+
+    padding: 12px;
+
+}
+
+
+
+button {
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: #27ae60;
+
+    color: white;
+
+    cursor: pointer;
+
+}
+
+
+
+button:hover {
+
+    background-color: #219150;
+
+}
+
+
+
+.cards {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 300px);
+
+    justify-content: center;
+
+    gap:30px;
+
+}
+
+.overview {
+
+    width: fit-content;
+
+    margin: 0 auto;
+
+}
+
+.overview h2 {
+    text-align:center;
+    padding: 10px;
+}
+
+
+
+.card {
+
+    background:white;
+
+    width:300px;
+
+    height:300px;
+
+    padding:40px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+
+}
+
+
+
+.card p {
+
+    font-size:1.5rem;
+
+    font-weight:bold;
+
+}
+
+
+
+
+/* ==============================
+   Transaction Page Layout
+   ============================== */
+
+
+.transaction-layout {
+
+    display:grid;
+
+    grid-template-columns:2.2fr 1fr;
+
+    gap:15px;
+
+    align-items:stretch;
+
+}
+
+.transaction-description {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+/* ==============================
+   Transaction History
+   ============================== */
+
+
+.transaction-history {
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+
+    height:650px;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+
+.transaction-history h3 {
+
+    margin-bottom:20px;
+
+}
+
+
+
+/* ==============================
+   Filters
+   ============================== */
+
+
+.transaction-filters {
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-bottom:20px;
+
+    align-items:center;
+
+}
+
+
+
+.transaction-filters input,
+.transaction-filters select {
+
+    padding:12px 15px;
+
+    border-radius:10px;
+
+    border:1px solid #ccc;
+
+    background:white;
+
+    box-shadow:0 3px 8px rgba(0,0,0,0.12);
+
+    font-size:1rem;
+
+}
+
+
+
+.transaction-filters input:focus,
+.transaction-filters select:focus {
+
+    outline:none;
+
+    border-color:#27ae60;
+
+}
+
+
+
+#transaction-search {
+
+    width:300px;
+
+}
+
+
+
+#transaction-filter {
+
+    width:180px;
+
+}
+
+
+
+.date-filter {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:5px;
+
+    white-space:nowrap;
+
+}
+
+
+
+.date-filter label {
+
+    font-weight:bold;
+
+}
+
+
+
+.date-filter input {
+
+    width:165px;
+
+}
+
+
+
+/* ==============================
+   Transaction Table
+   ============================== */
+
+
+.transaction-history table {
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    table-layout:fixed;
+
+}
+
+
+
+.transaction-history tbody {
+
+    display:block;
+
+    overflow-y:auto;
+
+    flex:1;
+
+}
+
+
+
+.transaction-history thead,
+.transaction-history tbody tr {
+
+    display:table;
+
+    width:100%;
+
+    table-layout:fixed;
+
+}
+
+
+
+th {
+
+    background:#2c3e50;
+
+    color:white;
+
+    padding:12px;
+
+    text-align:left;
+
+}
+
+
+
+td {
+
+    padding:12px;
+
+    border-bottom:1px solid #ddd;
+
+    overflow:hidden;
+
+    text-overflow:ellipsis;
+
+    white-space:nowrap;
+
+}
+
+
+
+tr:hover {
+
+    background:#f5f5f5;
+
+}
+
+
+
+/* Initial balance */
+
+.initial-balance-row {
+
+    background-color:#dff6dd;
+
+    font-weight:bold;
+
+}
+
+
+
+.initial-balance-row:hover {
+
+    background-color:#c8edc5;
+
+}
+
+
+
+/* ==============================
+   Right Side Boxes
+   ============================== */
+
+
+.transaction-controls {
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+    height:650px;
+
+}
+
+
+
+.transaction-input-box,
+.transaction-type-box {
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+
+}
+
+
+
+.transaction-input-box label {
+
+    display:block;
+
+    margin-top:15px;
+
+    margin-bottom:5px;
+
+    font-weight:bold;
+
+}
+
+
+
+.transaction-input-box input,
+.transaction-input-box select,
+.transaction-type-box input {
+
+    width:100%;
+
+    padding:12px;
+
+    border-radius:5px;
+
+    border:1px solid #ccc;
+
+}
+
+
+
+.transaction-input-box button,
+.transaction-type-box button {
+
+    width:100%;
+
+    margin-top:20px;
+
+}
+
+
+
+/* Buttons */
+
+
+.edit-btn {
+
+    background:#3498db;
+
+    padding:8px 12px;
+
+    font-size:.9rem;
+
+}
+
+
+
+.edit-btn:hover {
+
+    background:#2980b9;
+
+}
+
+
+
+.delete-btn {
+
+    background:#e74c3c;
+
+    padding:8px 12px;
+
+    font-size:.9rem;
+
+}
+
+
+
+.delete-btn:hover {
+
+    background:#c0392b;
+
+}
+
+
+
+/* ==============================
+   Summary Cards
+   ============================== */
+
+
+.transaction-summary {
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:10px;
+
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+
+    margin-bottom:25px;
+
+}
+
+
+
+.summary-cards {
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+}
+
+
+
+.summary-card {
+
+    background:#f4f6f8;
+
+    padding:20px;
+
+    text-align:center;
+
+    border-radius:8px;
+
+}
+
+
+
+/* ==============================
+   Responsive
+   ============================== */
+
+
+@media(max-width:900px) {
+
+
+    .transaction-layout {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    .transaction-controls {
+
+        height:auto;
+
+    }
+
+
+
+    .transaction-filters {
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+
+
+    #transaction-search,
+    #transaction-filter,
+    .date-filter input {
+
+        width:100%;
+
+    }
+
+
+
+    .cards,
+    .summary-cards {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    .navbar {
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+
+}
+
+.transaction-type-box h3 {
+
+    margin-bottom: 10px;
+
+}
+
+
+.transaction-type-box p {
+
+    margin-bottom: 15px;
+
+    line-height: 1.5;
+
+}
+
+/* Deposits */
+
+.deposit-row {
+
+    background-color: #dff6dd;
+
+}
+
+
+.deposit-row:hover {
+
+    background-color: #c8edc5;
+
+}
+
+
+
+/* Withdrawals */
+
+.withdrawal-row {
+
+    background-color: #fde2e2;
+
+}
+
+
+.withdrawal-row:hover {
+
+    background-color: #f8cccc;
+
+}
+
+
+
+/* Negative Balance */
+
+.negative-balance-row {
+
+    background-color: #e88b8b;
+
+}
+
+
+.negative-balance-row:hover {
+
+    background-color: #df7070;
+
+}
+
+
+
+/* Amount Colors */
+
+.deposit-amount {
+
+    color: #1b8a3b;
+
+    font-weight:bold;
+
+}
+
+
+.withdrawal-amount {
+
+    color:#c0392b;
+
+    font-weight:bold;
+
+}
+
+/* ==============================
+   Budget Page
+   ============================== */
+
+
+/* Budget Setup Box */
+
+.budget-setup {
+
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+    margin: 30px auto 40px;
+
+    text-align: center;
+
+    width: 350px;
+
+    max-width: 90%;
+
+}
+
+
+.budget-setup h3 {
+
+    margin-bottom: 15px;
+
+}
+
+
+.budget-setup p {
+
+    margin-bottom: 20px;
+
+    line-height: 1.5;
+
+    color: #666;
+
+}
+
+
+/* Budget Inputs */
+
+.budget-setup label {
+
+    display: block;
+
+    font-weight: bold;
+
+    margin-top: 15px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.budget-setup input,
+.budget-setup select {
+
+    width: 300px;
+
+    max-width: 100%;
+
+    padding: 14px 12px;
+
+    border-radius: 8px;
+
+    border: 1px solid #ccc;
+
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+
+    font-size: 1rem;
+
+}
+
+
+
+.budget-setup input:focus,
+.budget-setup select:focus {
+
+    outline: none;
+
+    border-color: #27ae60;
+
+    box-shadow: 0 0 8px rgba(39,174,96,0.4);
+
+}
+
+
+
+.budget-setup button {
+
+    margin-top: 25px;
+
+    width: 300px;
+
+    max-width: 100%;
+
+}
+
+
+
+/* Budget List Section */
+
+.budget-container {
+
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+    width: fit-content;
+
+    max-width: 90vw;
+
+    margin: 30px auto;
+
+}
+
+
+
+.budget-container h3 {
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* Budget Cards */
+
+.budget-cards {
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:25px;
+
+}
+
+
+
+.budget-card {
+
+    background-color: #f8fafc;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+
+    overflow: hidden;
+
+    text-align: center;
+
+    padding-bottom: 45px;
+
+    width:300px;
+
+}
+
+
+
+.budget-card h4 {
+
+    margin-bottom: 15px;
+
+    font-size: 1.3rem;
+
+}
+
+
+
+.budget-card p {
+
+    margin-bottom: 10px;
+
+}
+
+
+
+/* Progress Bar */
+
+.progress-container {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 12px;
+
+    background-color: #ddd;
+
+    border-radius: 20px;
+
+    margin-top: 15px;
+    
+    margin-bottom: 35px;
+
+}
+
+
+
+.progress-bar {
+
+    height: 100%;
+
+    border-radius: 20px;
+
+    transition: width 0.3s ease;
+
+}
+
+
+
+.progress-markers {
+
+    position: absolute;
+
+    top: 18px;
+
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 0.75rem;
+
+    color: #555;
+
+}
+
+
+
+.half-marker {
+
+    position: absolute;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+}
+
+
+
+/* Budget Status Colors */
+
+.budget-safe {
+
+    background-color: #27ae60;
+
+}
+
+
+.budget-warning {
+
+    background-color: #f1c40f;
+
+}
+
+
+.budget-danger {
+
+    background-color: #e74c3c;
+
+}
+
+.budget-card p {
+
+    margin:12px 0;
+
+}
+
+
+/* Budget Messages */
+
+#budget-message {
+
+    margin-top: 20px;
+
+    font-weight: bold;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:900px) {
+
+
+    .budget-cards {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+}
+
+/* Budget Delete Button */
+
+.delete-budget-btn {
+
+    background-color:#e74c3c;
+
+    margin-top:20px;
+
+    padding:10px 25px;
+
+    width:auto;
+
+    border-radius:25px;
+
+    font-size:0.9rem;
+
+    display:block;
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+}
+
+
+.delete-budget-btn:hover {
+
+    background-color:#c0392b;
+
+}
+
+.edit-budget-btn {
+
+    background-color:#3498db;
+
+    margin-top:20px;
+
+    margin-right:10px;
+
+    padding:10px 25px;
+
+    width:auto;
+
+    border-radius:25px;
+
+    font-size:0.9rem;
+
+}
+
+
+.edit-budget-btn:hover {
+
+    background-color:#2980b9;
+
+}
+
+.budget-card button {
+
+    display:inline-block;
+
+}
+
+/* Budget Edit Box */
+
+
+.budget-edit-box {
+
+    display:none;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+
+    margin-top:30px;
+
+    text-align:center;
+
+}
+
+
+
+.budget-edit-box h3 {
+
+    margin-bottom:20px;
+
+}
+
+
+
+.budget-edit-box input {
+
+    width:300px;
+
+    max-width:100%;
+
+    padding:12px;
+
+    border-radius:8px;
+
+    border:1px solid #ccc;
+
+    margin:15px;
+
+}
+
+
+
+.budget-edit-box button {
+
+    margin:10px;
+
+    width:auto;
+
+    padding:10px 25px;
+
+    border-radius:25px;
+
+}
+
+
+
+#cancel-budget-edit {
+
+    background-color:#e74c3c;
+
+}
+
+
+#cancel-budget-edit:hover {
+
+    background-color:#c0392b;
+
+}
+
+.budget-card button {
+
+    display:inline-block;
+
+    margin:10px 5px;
+
+}
+
+#remove-category-btn {
+
+    background-color:#e74c3c;
+
+    margin-top:15px;
+
+    width:auto;
+
+    padding:10px 20px;
+
+    border-radius:25px;
+
+}
+
+
+#remove-category-btn:hover {
+
+    background-color:#c0392b;
+
+}
+
+/* Savings Cards */
+
+
+.savings-container {
+
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    width: fit-content;
+
+    max-width: 90vw;
+
+    margin: 30px auto;
+
+}
+
+
+
+.savings-cards {
+
+    display:flex;
+
+   flex-wrap: wrap;
+
+    gap:25px;
+
+}
+
+
+
+.savings-card {
+
+    background:#f4f6f8;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+}
+
+
+
+.savings-card h4 {
+
+    margin-bottom:15px;
+
+}
+
+
+
+.savings-progress-container {
+
+    width:100%;
+
+    height:12px;
+
+    background:#ddd;
+
+    border-radius:20px;
+
+    margin-top:20px;
+
+}
+
+
+
+.savings-progress-bar {
+
+    height:100%;
+
+    background:#27ae60;
+
+    border-radius:20px;
+
+    transition:width 0.3s ease;
+
+}
+
+.add-savings-btn {
+
+    margin-top:20px;
+
+    padding:10px 20px;
+
+    border:none;
+
+    border-radius:20px;
+
+    background:#27ae60;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+
+.add-savings-btn:hover {
+
+    background:#219150;
+
+}
+
+.savings-input-box {
+
+    margin-top:20px;
+
+}
+
+
+
+.savings-input-box input {
+
+    width:40%;
+
+    padding:10px;
+
+    border-radius:10px;
+
+    border:1px solid #ccc;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.save-savings-btn,
+.cancel-savings-btn {
+
+
+    width:100px;
+
+    padding:10px;
+
+    border:none;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+}
+
+
+
+.save-savings-btn {
+
+    background:#27ae60;
+
+    color:white;
+
+}
+
+
+
+.cancel-savings-btn {
+
+    background:#e74c3c;
+
+    color:white;
+
+}
+
+.savings-input-box input {
+
+    width: 120px;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    border: 1px solid #ccc;
+
+}
+
+.savings-cards {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+}
+
+
+.savings-card {
+
+    width: 300px;
+
+    max-width: 100%;
+
+}
+
+.savings-setup {
+
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    width: 350px;
+
+    max-width: 90%;
+
+    margin: 30px auto;
+
+}
+
+
+.savings-setup h3 {
+
+    margin-bottom: 20px;
+
+}
+
+
+.savings-setup label {
+
+    display: block;
+
+    margin-top: 15px;
+
+    margin-bottom: 5px;
+
+    font-weight: bold;
+
+}
+
+
+.savings-setup input,
+.savings-setup select {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    border: 1px solid #ccc;
+
+}
+
+
+.savings-setup button {
+
+    width: 100%;
+
+    margin-top: 20px;
+
+}
+
+.edit-savings-btn,
+.delete-savings-btn{
+
+    margin-top:10px;
+
+    width:130px;
+
+}
+
+.edit-savings-btn{
+
+    background:#3498db;
+
+}
+
+.edit-savings-btn:hover{
+
+    background:#2980b9;
+
+}
+
+.delete-savings-btn{
+
+    background:#e74c3c;
+
+}
+
+.delete-savings-btn:hover{
+
+    background:#c0392b;
+
+}
+
+.add-savings-btn,
+.edit-savings-btn,
+.delete-savings-btn {
+    border-radius: 20px;
+}
+
+.savings-calculator-card {
+
+    width: 350px;
+
+    margin: 30px auto;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    background: white;
+
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+
+    text-align: center;
+
+}
+
+
+.savings-calculator-card input,
+.savings-calculator-card select {
+
+    width: 80%;
+
+    padding: 8px;
+
+    margin: 8px auto;
+
+    border-radius: 10px;
+
+    border: 1px solid #ccc;
+
+    display: block;
+
+}
+
+
+#calculate-savings-btn {
+
+    margin-top: 15px;
+
+    padding: 10px 20px;
+
+    border-radius: 20px;
+
+    border: none;
+
+    cursor: pointer;
+
+}
+
+
+#calculator-result {
+
+    margin-top: 20px;
+
+    font-weight: bold;
+
+}
+
+.calculator-mode {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+
+.mode-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 14px 18px;
+
+    border: 1px solid #ccc;
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    background-color: white;
+
+    transition: 0.2s ease;
+}
+
+
+.mode-option:hover {
+
+    border-color: #4caf50;
+
+}
+
+
+.mode-option input {
+
+    width: 18px;
+    height: 18px;
+
+    cursor: pointer;
+
+}
+
+.savings-content {
+
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+
+}
+
+
+#savings-list {
+
+    flex: 1;
+
+}
+
+
+.edit-savings-panel {
+
+    width: 280px;
+
+}
+
+.transaction-input-box.editing {
+
+    border: 2px solid #4caf50;
+
+    box-shadow:
+    0 0 15px rgba(76,175,80,0.4);
+
+}
+
+.edit-savings-panel {
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 25px;
+
+    width: 280px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+}
