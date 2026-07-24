@@ -68,7 +68,7 @@ Final Project/
 
 ## Author
 
-Jakob
+Jakob Anderson
 
 ## Known Limitations
 
